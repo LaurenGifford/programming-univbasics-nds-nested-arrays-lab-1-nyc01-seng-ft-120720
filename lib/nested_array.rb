@@ -24,9 +24,6 @@ def assembled_matrix
 end
 
 def sorted_matrix
-  # Using Array literal syntax only, build another nested array that 
-  # uses the arrays of conventional and organic produce as before.
-  # However, this time, sort each internal array alphabetically by the first character
   produce = [
     CONVENTIONAL_PRODUCE.sort,
     ORGANIC_PRODUCE.sort
@@ -42,4 +39,5 @@ def matrix_update(matrix, row, column, new_value)
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
   matrix[row][column] = new_value
+  matrix
 end
